@@ -16,5 +16,8 @@ spec:
     namespace: dev-go
 
   syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
     syncOptions:
       - CreateNamespace=true
